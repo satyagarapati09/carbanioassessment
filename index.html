@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="text-center image-div">
+        <img class="logo" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/pwnqj0phjxop4pzcz5bd" />
+    </div>
+
+    <div class="container mt-5">
+        <p class="main-heading"> PLEASE RESPOND TO THE CUSTOMIZED CHEMICAL REQUIREMENT </p>
+
+        <table class="table">
+            <thead>
+                <tr class="table-bg">
+                    <th scope="col">Products Details</th>
+                    <th scope="col">Purity</th>
+                    <th scope="col">Weight</th>
+                    <th scope="col">Packs</th>
+                    <th scope="col">Will you supply this Chemical?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="specifications-row1">
+                    <th scope="row"> <span class="span-el"> Erioglaucine sodium salt</span> <br />
+                        CAS No. 19774-82-4 </th>
+                    <td class="pl-2">99.99%</td>
+                    <td class="pl-3">50kg</td>
+                    <td class="pl-3">10</td>
+                    <td>
+                        <div class="d-flex flex-row pl-3">
+                            <div>
+                                <button id="yesBtn1" class="button yes-btn"> YES </button>
+                            </div>
+                            <div>
+                                <button id="noBtn1" class="button no-btn"> NO </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="specifications-row1">
+                    <th scope="row"> <span class="span-el"> Varenicline Nitraso Impurity </span><br />
+                        CAS No. 19774-82-4 </th>
+                    <td class="pl-3">98%</td>
+                    <td class="pl-3">10kg</td>
+                    <td class="pl-3">5</td>
+                    <td>
+                        <div class="d-flex flex-row pl-3">
+                            <div>
+                                <button id="yesBtn2" class="button yes-btn"> YES </button>
+                            </div>
+                            <div>
+                                <button id="noBtn2" class="button no-btn"> NO </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="specifications-row1">
+                    <th scope="row" class="specifications-row1"> <span class="span-el"> MANGANESE DIOXIDE Extra Pure </span> <br />
+                        CAS No. 19774-82-4</th>
+                    <td class="pl-3">100%</td>
+                    <td class="pl-3">100kg</td>
+                    <td class="pl-3">1</td>
+                    <td>
+                        <div class="d-flex flex-row pl-3">
+                            <div>
+                                <button id="yesBtn3" class="button yes-btn"> YES </button>
+                            </div>
+                            <div>
+                                <button id="noBtn3" class="button no-btn"> NO </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="specifications-row1">
+                    <th scope="row" class="specifications-row1"> <span class="span-el"> Diethanolamine (For Synthesis). </span><br />
+                        CAS No. 19774-82-4 </th>
+                    <td class="pl-3">99%</td>
+                    <td class="pl-3">1kg</td>
+                    <td class="pl-3">3</td>
+                    <td>
+                        <div class="d-flex flex-row pl-3">
+                            <div>
+                                <button id="yesBtn4" class="button yes-btn"> YES </button>
+                            </div>
+                            <div>
+                                <button id="noBtn4" class="button no-btn"> NO </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="specifications-row1 border-line">
+                    <th scope="row" class="specifications-row1"> <span class="span-el"> Cyclohexylamine extrapure AR </span><br />
+                        CAS No. 19774-82-4 </th>
+                    <td class="pl-3">90%</td>
+                    <td class="pl-3">3kg</td>
+                    <td class="pl-3">6</td>
+                    <td>
+                        <div class="d-flex flex-row pl-3">
+                            <div>
+                                <button id="yesBtn5" class="button yes-btn"> YES </button>
+                            </div>
+                            <div>
+                                <button id="noBtn5" class="button no-btn"> NO </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center mt-5">
+            <button id="submitBtn" class="submit-btn mb-5 btn" disabled="true"> SUBMIT </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+       let submitBtnEl = document.getElementById("submitBtn");
+
+let yesBtnEl1 = document.getElementById("yesBtn1");
+let yesBtnEl2 = document.getElementById("yesBtn2");
+let yesBtnEl3 = document.getElementById("yesBtn3");
+let yesBtnEl4 = document.getElementById("yesBtn4");
+let yesBtnEl5 = document.getElementById("yesBtn5");
+
+let noBtnEl1 = document.getElementById("noBtn1");
+let noBtnEl2 = document.getElementById("noBtn2");
+let noBtnEl3 = document.getElementById("noBtn3");
+let noBtnEl4 = document.getElementById("noBtn4");
+let noBtnEl5 = document.getElementById("noBtn5");
+
+
+
+yesBtnEl1.onclick = function() {
+    yesBtnEl1.style.backgroundColor = "#3D3DEF";
+    yesBtnEl1.style.color = "white";
+    noBtnEl1.style.backgroundColor = "white";
+    colorChanged();
+}
+
+noBtnEl1.onclick = function() {
+    noBtnEl1.style.backgroundColor = "#3D3DEF";
+    noBtnEl1.style.color = "white";
+    yesBtnEl1.style.backgroundColor = "white";
+    colorChanged();
+}
+
+yesBtnEl2.onclick = function() {
+    yesBtnEl2.style.backgroundColor = "#3D3DEF";
+    yesBtnEl2.style.color = "white";
+    noBtnEl2.style.backgroundColor = "white";
+    colorChanged();
+}
+
+noBtnEl2.onclick = function() {
+    noBtnEl2.style.backgroundColor = "#3D3DEF";
+    noBtnEl2.style.color = "white";
+    yesBtnEl2.style.backgroundColor = "white";
+    colorChanged();
+}
+
+yesBtnEl3.onclick = function() {
+    yesBtnEl3.style.backgroundColor = "#3D3DEF";
+    yesBtnEl3.style.color = "white";
+    noBtnEl3.style.backgroundColor = "white";
+    colorChanged();
+}
+
+noBtnEl3.onclick = function() {
+    noBtnEl3.style.backgroundColor = "#3D3DEF";
+    noBtnEl3.style.color = "white";
+    yesBtnEl3.style.backgroundColor = "white";
+    colorChanged();
+}
+
+noBtnEl4.onclick = function() {
+    noBtnEl4.style.backgroundColor = "#3D3DEF";
+    noBtnEl4.style.color = "white";
+    yesBtnEl4.style.backgroundColor = "white";
+    colorChanged();
+}
+
+yesBtnEl4.onclick = function() {
+    yesBtnEl4.style.backgroundColor = "#3D3DEF";
+    yesBtnEl4.style.color = "white";
+    noBtnEl4.style.backgroundColor = "white";
+    colorChanged();
+}
+
+yesBtnEl5.onclick = function() {
+    yesBtnEl5.style.backgroundColor = "#3D3DEF";
+    yesBtnEl5.style.color = "white";
+    noBtnEl5.style.backgroundColor = "white";
+    colorChanged();
+}
+
+noBtnEl5.onclick = function() {
+    noBtnEl5.style.backgroundColor = "#3D3DEF";
+    noBtnEl5.style.color = "white";
+    yesBtnEl5.style.backgroundColor = "white";
+    colorChanged();
+}
+
+function colorChanged() {
+    if (yesBtnEl1.style.color === "white" || noBtnEl1.style.color === "white") {
+        if (yesBtnEl2.style.color === "white" || noBtnEl2.style.color === "white") {
+            if (yesBtnEl3.style.color === "white" || noBtnEl3.style.color === "white") {
+                if (yesBtnEl4.style.color === "white" || noBtnEl4.style.color === "white") {
+                    if (yesBtnEl5.style.color === "white" || noBtnEl5.style.color === "white") {
+                        submitBtnEl.disabled = false;
+                    }
+                }
+            }
+
+        }
+    }
+}
+    </script>
+</body>
+
+</html>
